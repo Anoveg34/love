@@ -27,11 +27,11 @@
                     <span class="say">爱你哦，宝贝</span><br>
                
                    <br>
-                    <span class="say"><span class="space"></span> -- Yours, 豪豪.</span>
+                    <span class="say"><span class="space"></span> -- Yours, 景豪.</span>
                     </div>
                 </div>
                 <div id="clock-box">
-                   豪豪 与 蔓蔓 在一起的
+                   景豪 与 蔓蔓 在一起的
                         <div id="clock"></div>
                 </div>
                 <canvas id="canvas" width="1100" height="680"></canvas>
@@ -171,13 +171,7 @@
         }));
 
         var textAnimate = eval(Jscex.compile("async", function () {
-            var together = new Date();
-            together.setFullYear(2021, 10, 31);
-            together.setHours(20);
-            together.setMinutes(20);
-            together.setSeconds(0);
-            together.setMilliseconds(0);
-
+           var together = new Date("2021/10/31 0:0:0");
             $("#code").show().typewriter();
             $("#clock-box").fadeIn(500);
             while (true) {
